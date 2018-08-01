@@ -26,7 +26,7 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/honami/include
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/honami/bluetooth
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := lineageos_rhine_honami_row_defconfig
+TARGET_KERNEL_CONFIG := carbon_rhine_honami_row_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
@@ -35,3 +35,11 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
+
+#Recovery
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+
+# BOARD_USES_RECOVERY_AS_BOOT   := true
+# BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+# TARGET_RECOVERY_FSTAB := device/sony/rhine-common/rootdir/fstab.full
+#BOARD_KERNEL_CMDLINE  += androidboot.selinux=permissive
